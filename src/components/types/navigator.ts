@@ -1,8 +1,9 @@
 import { BaseProps } from ".";
 
-export type NavigatorItem = {
-  name: string;
+export type NavigatorItemProps = {
+  label: string;
   path?: string;
   disabled?: boolean;
+  children?: NavigatorItemProps[];
 };
 export interface NavigatorProps extends BaseProps {}
