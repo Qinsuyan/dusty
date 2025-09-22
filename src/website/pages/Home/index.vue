@@ -1,7 +1,11 @@
 <template>
-  <section class="dust-home"></section>
+  <section class="dust-home">
+    <Nav/>
+  </section>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Nav from '@/components/Nav/index.vue';
+</script>
 <style lang="less">
 .dust-home {
   width: 100%;

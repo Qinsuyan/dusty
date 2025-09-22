@@ -14,4 +14,6 @@ export type NavigatorItemProps = {
   iconRender?: ReturnType<typeof h>;
   children?: NavigatorItemProps[];
 };
-export interface NavigatorProps extends BaseProps {}
+export interface NavigatorProps extends BaseProps {
+  items: NavigatorItemProps[];
+}

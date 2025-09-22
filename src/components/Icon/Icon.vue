@@ -15,6 +15,7 @@ const sizeClass = computed(() => {
       return `dust-icon dust-icon-${props.size}`;
     }
   }
+  return "dust-icon";
 });
 const customStyle = computed(() => {
   const styles: Partial<CSSStyleDeclaration> = {};
@@ -32,9 +33,10 @@ const customStyle = computed(() => {
 </script>
 <style lang="less">
 .dust-icon {
-  font-size: 14px;
-  width: 14px;
-  height: 14px;
+  font-size: 20px;
+  height: 24px;
+  margin-top: 6px;
+  user-select: none;
   .dust-icon-small {
     font-size: 12px;
     width: 12px;
